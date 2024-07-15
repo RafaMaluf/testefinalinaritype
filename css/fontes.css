@@ -1,0 +1,327 @@
+/* PAGINA CSS PARA AS PAGINAS DAS FONTES */
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PP Mori", sans-serif;
+    width: 99.4%;
+    line-height: 1.2em;
+    overflow-x: hidden;
+ }
+
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('../extras/01_OTF/PPMori-Regular.otf') format('opentype');
+
+}
+
+hr{
+    border: none; /* Remove as bordas padrão */
+    height: 1px; /* Define a altura da linha */
+    background-color: #636363; /* Define a cor da linha (ajuste conforme necessário) */
+    box-shadow: none;
+}
+
+/* ESTILOS CABEÇALHO */
+header{
+    width: 98%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+}
+
+.header-grid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-grid a{
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    transition: .2s;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+
+.header-grid a::before { /* Adicionado */
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    width: 34%;
+    height: 20%;
+    background-color: yellow;
+    filter: blur(5px);
+    opacity: 0;
+    transition: opacity 0s;
+    z-index: -1;
+    border-radius: 5px; /* Adicionado para arredondar as bordas */
+}
+
+.header-grid a:hover::before { /* Adicionado */
+    opacity: 100;
+}
+
+
+div.inaritype a::before { /* Adicionado */
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 26%;
+    height: 20%;
+    background-color: yellow;
+    filter: blur(5px);
+    opacity: 0;
+    transition: opacity 0s;
+    z-index: -1;
+    border-radius: 5px; /* Adicionado para arredondar as bordas */
+}
+
+.header-grid a:hover::before { /* Adicionado */
+    opacity: 100;
+}
+div.article a::before { /* Adicionado */
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    width: 22%;
+    height: 20%;
+    background-color: yellow;
+    filter: blur(4px);
+    opacity: 0;
+    transition: opacity 0s;
+    z-index: -1;
+    border-radius: 5px; /* Adicionado para arredondar as bordas */
+}
+
+.header-grid a:hover::before { /* Adicionado */
+    opacity: 100;
+}
+
+/* ESTILOS MAIN TEXTOS */
+
+main a{
+    color: #636363;
+}
+
+main section.main-grid{
+    font-size: 9px;
+    margin-left: 1rem;
+    width: 99%;
+}
+
+.main-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.4rem;
+}
+
+.grid-item {
+    width: 23%;
+    box-sizing: border-box; /* Para garantir que o padding e a borda não aumentem a largura total */
+}
+
+.grid-item a {
+    text-decoration: none;
+}
+
+.grid-item a hr {
+    margin: 10px 0;
+}
+
+/* ESTILO MAIN IMAGENS */
+
+.imagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: 1.7%;
+}
+
+.imagens video,
+.imagens img {
+    max-width: 100%;
+    width:  100%;
+    height:auto;
+    margin-bottom: 20px;
+    
+}
+
+.imagens br {
+    display: none;
+}
+
+.eiko{
+    margin-left: 1.7rem;
+}
+
+/* ESTILOS FOOTER */
+
+footer {
+    bottom: 0;
+    width: 144%;
+    padding: 10px;
+    position: fixed;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}  
+
+
+footer ul li a{
+    text-decoration: none;
+    transition: .2s;
+    justify-content: space-around;
+    color: black;
+    position: relative;
+}
+
+
+footer ul li a::before { /* Adicionado */
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 80%;
+    background-color: yellow;
+    filter: blur(8px);
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    z-index: -1;
+    border-radius: 5px; /* Adicionado para arredondar as bordas */
+}
+
+footer ul li a:hover::before { /* Adicionado */
+    opacity: 1;
+}
+
+
+
+/* Media Queries para Responsividade */
+/* Notebooks e MacBooks */
+@media (max-width: 1440px) {
+    header {
+        font-size: 14px;
+    }
+    main {
+        font-size: 12px;
+    }
+    footer {
+        font-size: 14px;
+        margin-top: calc(33vh + 1.5rem); 
+    }
+}
+
+/* iMacs */
+@media (min-width: 2560px) {
+    header {
+        font-size: 16px;
+    }
+    main {
+        font-size: 14px;
+    }
+    footer {
+        font-size: 16px;
+        margin-top: calc(28vh + 1.5rem);
+    }
+}
+
+/* Tablets (iPads) */
+@media (max-width: 1024px) {
+    .header-grid {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .header-grid a::before{
+        width: 0%;
+        height: 0%;
+    }
+
+    header{
+        font-size: 12px;
+    }
+    div.inaritype a::before{
+        width: 0%;
+        height: 0%;
+    }
+    div.article a::before{
+        width: 0%;
+        height: 0%;
+    }
+
+    main {
+        font-size: 10px;
+    }
+    
+    .imagens video {
+        width: 100%;
+        height: auto;
+    }
+
+    img.eiko{
+        margin-left: 0.5rem;
+    }
+
+    footer {
+        font-size: 12px;
+        margin-top: calc(28vh + 1.5rem);
+    }
+    footer ul{
+        width: 90%;
+    }
+    footer ul li a::before {
+        width: 0%;
+        height: 0%;
+    }
+}
+
+/* Smartphones (iPhones/Androids) */
+@media (max-width: 768px) {
+    header {
+        font-size: 12px;
+    }
+    main {
+        font-size: 10px;
+    }
+    footer {
+        font-size: 12px;
+        width: 166%;
+        margin-top: calc(28vh + 1.5rem);
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        font-size: 11px;
+    }
+    main {
+        font-size: 9px;
+    }
+    footer {
+        font-size: 11px;
+        width: 160%;
+        margin-top: calc(28vh + 1.5rem);
+    }
+}
