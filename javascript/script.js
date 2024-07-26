@@ -65,3 +65,20 @@ document.addEventListener('DOMContentLoaded', () => {
         createBall();
     }
 });
+
+
+
+document.getElementById('copy-email').addEventListener('click', function(event) {
+    event.preventDefault();
+    const email = 'inaritype@gmail.com';
+
+    navigator.clipboard.writeText(email).then(function() {
+        const successMessage = document.getElementById('copy-success');
+        successMessage.style.display = 'block';
+        setTimeout(() => {
+            successMessage.style.display = 'none';
+        }, 2000);
+    }, function(err) {
+        console.error('Erro ao copiar o e-mail: ', err);
+    });
+});
