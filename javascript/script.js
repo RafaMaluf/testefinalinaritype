@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.background-container');
     const numBalls = 10; // Número de bolas
-    const ballSizeMin = 50; // Tamanho mínimo da bola
-    const ballSizeMax = 150; // Tamanho máximo da bola
+    const ballSizeMin = 100; // Tamanho mínimo da bola
+    const ballSizeMax = 300; // Tamanho máximo da bola
     const durationMin = 10; // Duração mínima da animação
     const durationMax = 20; // Duração máxima da animação
 
