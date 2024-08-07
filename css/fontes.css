@@ -49,66 +49,6 @@ header{
 }
 
 
-.header-grid a::before { /* Adicionado */
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 13%;
-    transform: translate(-50%, -50%);
-    width: 5.4vw;
-    height: 1.3vh;
-    background-color: yellow;
-    filter: blur(7px);
-    opacity: 0;
-    transition: opacity 0s;
-    z-index: -1;
-    border-radius: 5px; /* Adicionado para arredondar as bordas */
-}
-
-.header-grid a:hover::before { /* Adicionado */
-    opacity: 100;
-}
-
-
-div.inaritype a::before { /* Adicionado */
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    width: 4.3vw;
-    height: 1.2vh;
-    background-color: yellow;
-    filter: blur(6px);
-    opacity: 0;
-    transition: opacity 0s;
-    z-index: -1;
-    border-radius: 5px; /* Adicionado para arredondar as bordas */
-}
-
-.header-grid a:hover::before { /* Adicionado */
-    opacity: 100;
-}
-div.article a::before { /* Adicionado */
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 9%;
-    transform: translate(-50%, -50%);
-    width: 3.2vw;
-    height: 1.6vh;
-    background-color: yellow;
-    filter: blur(7px);
-    opacity: 0;
-    transition: opacity 0s;
-    z-index: -1;
-    border-radius: 5px; /* Adicionado para arredondar as bordas */
-}
-
-.header-grid a:hover::before { /* Adicionado */
-    opacity: 100;
-}
-
 
 /* ESTILOS MAIN TEXTOS */
 
@@ -165,6 +105,10 @@ main section.main-grid{
 }
 
 .eiko{
+    margin-left: 1.7rem;
+}
+ 
+.imagensss{
     margin-left: 1.7rem;
 }
 
