@@ -29,7 +29,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .header-grid{
@@ -104,9 +104,7 @@ main section.main-grid{
     display: none;
 }
 
-.eiko{
-    margin-left: 1.7rem;
-}
+
  
 .imagensss{
     margin-left: 1.7rem;
@@ -142,18 +140,17 @@ footer ul li a{
 
 
 
-
 /* Media Queries para Responsividade */
 /* Notebooks e MacBooks */
-@media (max-width: 1440px) {
+@media (min-width: 1537px) {
     header {
-        font-size: 14px;
+        font-size: 16px;
     }
     main {
         font-size: 12px;
     }
     footer {
-        font-size: 14px;
+        font-size: 16px;
         margin-top: calc(33vh + 1.5rem); 
     }
 }
