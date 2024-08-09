@@ -24,7 +24,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .header-grid{
@@ -99,12 +99,12 @@ footer nav a{
 
 /* Media Queries para Responsividade */
 /* Notebooks e MacBooks */
-@media (max-width: 1440px) {
+@media (min-width: 1537px) {
     header {
-        font-size: 14px;
+        font-size: 16px;
     }
     main {
-        font-size: 14px;
+        font-size: 16px;
     }
     footer {
         font-size: 12px;
