@@ -103,12 +103,28 @@ main section.main-grid{
 .imagens br {
     display: none;
 }
-
-
- 
-.imagensss{
-    margin-left: 1.7rem;
+.imagensss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: 1.7%;
 }
+
+.imagensss video,
+.imagensss img {
+    max-width: 100%;
+    width:  100%;
+    height:auto;
+    margin-bottom: 20px;
+    
+}
+
+.imagensss br {
+    display: none;
+}
+
+
 
 /* ESTILOS FOOTER */
 
@@ -201,9 +217,9 @@ footer ul li a{
         width: 100%;
         height: auto;
     }
-
-    img.eiko{
-        margin-left: 0.5rem;
+    .imagensss video {
+        width: 100%;
+        height: auto;
     }
 
     footer {
