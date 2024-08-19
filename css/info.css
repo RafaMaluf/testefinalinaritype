@@ -100,7 +100,7 @@ footer nav a{
 
 /* Media Queries para Responsividade */
 /* Notebooks e MacBooks */
-@media (min-width: 1537px) {
+@media (min-width: 1530px) {
     header {
         font-size: 2vh;
     }
@@ -108,13 +108,13 @@ footer nav a{
         font-size: 2vh;
     }
     footer {
-        font-size: 12px;
-        margin-top: calc(36vh); 
+        font-size: 2vh;
+        margin-top: 36vh; 
     }
 }
 
 /* iMacs */
-@media (min-width: 2560px) {
+@media (min-width: 2000px) {
     header {
         font-size: 2vh;
     }
@@ -122,8 +122,8 @@ footer nav a{
         font-size: 2vh;
     }
     footer {
-        font-size: 14px;
-        margin-top: calc(28vh + 1.5rem);
+        font-size: 2vh;
+        margin-top: 36vh;
     }
 }
 
