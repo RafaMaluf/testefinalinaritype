@@ -29,7 +29,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    font-size: 14px;
+    font-size: 2vh;
 }
 
 .header-grid{
@@ -133,7 +133,7 @@ footer {
     width: 144%;
     padding: 10px;
     position: fixed;
-    font-size: 14px;
+    font-size: 2vh;
     color: black;
     margin-bottom: 1rem;
 }
@@ -160,7 +160,7 @@ footer ul li a{
 /* Notebooks e MacBooks */
 @media (min-width: 1537px) {
     header {
-        font-size: 16px;
+        font-size: 2vh;
     }
     main {
         font-size: 12px;
@@ -174,7 +174,7 @@ footer ul li a{
 /* iMacs */
 @media (min-width: 2560px) {
     header {
-        font-size: 16px;
+        font-size: 2vh;
     }
     main {
         font-size: 14px;
