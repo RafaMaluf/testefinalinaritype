@@ -103,6 +103,7 @@ footer{
     margin-top: 51%;
     margin-left: 1%;
     margin-right: 1%;
+    font-size: 2vh;
 }
 footer nav{
     display: flex;
@@ -126,7 +127,7 @@ footer nav a{
         font-size: 2vh;
     }
     footer {
-        font-size: 12px;
+        font-size: 2vh;
         margin-top: calc(100vh + 1.5rem); 
     }
 }
@@ -140,7 +141,7 @@ footer nav a{
         font-size: 2vh;
     }
     footer {
-        font-size: 14px;
+        font-size: 2vh;
         margin-top: calc(100vh + 1.5rem);
     }
 }
