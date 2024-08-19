@@ -57,7 +57,7 @@ main a{
 }
 
 main section.main-grid{
-    font-size: 9px;
+    font-size: 1.6vh;
     margin-left: 1rem;
     width: 99%;
 }
@@ -133,7 +133,7 @@ footer {
     width: 144%;
     padding: 10px;
     position: fixed;
-    font-size: 2vh;
+    font-size: 2.2vh;
     color: black;
     margin-bottom: 1rem;
 }
@@ -166,7 +166,7 @@ footer ul li a{
         font-size: 12px;
     }
     footer {
-        font-size: 16px;
+        font-size: 2vh;
         margin-top: calc(33vh + 1.5rem); 
     }
 }
@@ -180,7 +180,7 @@ footer ul li a{
         font-size: 14px;
     }
     footer {
-        font-size: 16px;
+        font-size: 2vh;
         margin-top: calc(28vh + 1.5rem);
     }
 }
